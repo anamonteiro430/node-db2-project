@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:4000
+
+GET {{baseUrl}}/api/cars/
+
+###
+
+GET {{baseUrl}}/api/cars/2
+
+
+@baseUrl = http://localhost:4000
+
+###
+
+POST {{baseUrl}}/api/accounts/
+content-type: application/json
+
+{
+    "VIN": "sawmplwwe",
+    "make": "22212",
+    "model": "seat",
+    "make": "ibiza"
+}
+
+###
+
+PUT {{baseUrl}}/api/accounts/1
+content-type: application/json
+
+{
+    "name": "numbssers1",
+    "budget": "22112"
+}
+
+###
+DELETE {{baseUrl}}/api/accounts/5
+
+
+Accept: application/hal+json
+
