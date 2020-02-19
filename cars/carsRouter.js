@@ -49,4 +49,10 @@ router.post('/', (req, res) => {
 		});
 });
 
+function getById(id) {
+	return db('cars')
+		.where({ id })
+		.first();
+}
+
 module.exports = router;

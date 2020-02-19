@@ -11,16 +11,15 @@ GET {{baseUrl}}/api/cars/2
 
 ###
 
-POST {{baseUrl}}/api/accounts/
+POST {{baseUrl}}/api/cars/
 content-type: application/json
 
 {
-    "VIN": "sawmplwwe",
-    "make": "22212",
-    "model": "seat",
-    "make": "ibiza"
+    "vin": "29839283",
+    "make": "mercedes",
+    "model": "cool",
+    "mileage": "555"
 }
-
 ###
 
 PUT {{baseUrl}}/api/accounts/1
